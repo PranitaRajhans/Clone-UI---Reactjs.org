@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="D:\front-end projects\React\index.css">
+    <link rel="stylesheet" href="D:\front-end projects\React\docs.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>React JS</title>
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <header class="css-19rsoyj">
+        <div class="css-tctv7l">
+            <div class="css-iiezwn">
+                <a class="css-4ivotw" href="D:\front-end projects\React\index.html">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+                        alt="" height="20"><span class="css-184keb2">React</span></a>
+                <nav class="css-79txt3">
+                    <a aria-current="page" class="css-li68ai" href="D:\front-end projects\React\docs.html">
+                        Docs<span class="css-2y24fj"></span></a>
+                    <a class="css-hobwqm" href="D:\front-end projects\React\tutorial.html">Tutorial</a>
+                    <a class="css-hobwqm" href="D:\front-end projects\React\blogs.html">Blog</a>
+                    <a class="css-hobwqm" href="D:\front-end projects\React\community.html">Community</a>
+                </nav>
+
+
+                <form class="css-7vmqep"><span class="algolia-autocomplete"
+                        style="position: relative; display: inline-block; direction: ltr;"><input
+                            id="algolia-doc-search" type="search" placeholder="Search" aria-label="Search docs"
+                            class="css-7dpbpx ds-input" autocomplete="off" spellcheck="false" role="combobox"
+                            aria-autocomplete="list" aria-expanded="false" aria-labelledby="algolia-doc-search"
+                            aria-owns="algolia-autocomplete-listbox-4" dir="auto"
+                            style="position: relative; vertical-align: top;">
+                        <pre aria-hidden="true"
+                            style="position: absolute; visibility: hidden; white-space: pre; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                        <span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-4"
+                            style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;">
+                            <div class="ds-dataset-5"></div>
+                        </span>
+                    </span></form>
+                <div class="css-nypjs8"><a class="css-zvm479" href="/versions">v17.0.2</a><a class="css-1upvlu3"
+                        href="/languages"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+                                class="css-c4d79v"></path>
+                        </svg> <span class="css-1rsw1pf">Languages</span></a><a
+                        href="https://github.com/facebook/react/" target="_blank" rel="noopener"
+                        class="css-6oo1gu">GitHub<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"
+                            class="css-19vhmgv">
+                            <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+      0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+    "></path>
+                            <polygon fill="currentColor" points="
+      45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+      14.9 62.8,22.9 71.5,22.9
+      "></polygon>
+                        </svg></a></div>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="row no-gutters">
+
+        <!-- content -->
+        <div class="col-8">
+            <div class="main">
+                <article class="">
+                    <header class=""><br><br>
+                        <h1 class="css-c3aatb">Getting Started</h1>
+                    </header>
+                    <div class="css-124oy3v">
+                        <div class="css-15weewl">
+                            <div class="first-line">This page is an overview of the React documentation and related resources.</div>
+                            <p><strong>React</strong> is a JavaScript library for building user interfaces. Learn what
+                                React is
+                                all about on <a href="/">our homepage</a> or <a href="/tutorial/tutorial.html">in the
+                                    tutorial</a>.</p>
+                            <br><hr>
+                            <ul>
+                                <li><a href="#try-react">Try React</a></li>
+                                <li><a href="#learn-react">Learn React</a></li>
+                                <li><a href="#staying-informed">Staying Informed</a></li>
+                                <li><a href="#versioned-documentation">Versioned Documentation</a></li>
+                                <li><a href="#something-missing">Something Missing?</a></li>
+                            </ul>
+
+                            <br><hr>
+                            <h2 id="try-react"><a href="#try-react" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Try React </h2>
+                            <p>React has been designed from the start for gradual adoption, and <strong>you can use as
+                                    little or
+                                    as much React as you need.</strong> Whether you want to get a taste of React, add
+                                some
+                                interactivity to a simple HTML page, or start a complex React-powered app, the links in
+                                this
+                                section will help you get started.</p>
+                            <h3 id="online-playgrounds"><a href="#online-playgrounds" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Online Playgrounds </h3>
+                            <p>If you’re interested in playing around with React, you can use an online code playground.
+                                Try a
+                                Hello World template on <a href="/redirect-to-codepen/hello-world" target="_blank"
+                                    rel="noreferrer">CodePen</a>, <a href="https://codesandbox.io/s/new" target="_blank"
+                                    rel="nofollow noopener noreferrer">CodeSandbox</a>, or <a
+                                    href="https://stackblitz.com/fork/react" target="_blank"
+                                    rel="nofollow noopener noreferrer">Stackblitz</a>.</p>
+                            <p>If you prefer to use your own text editor, you can also <a
+                                    href="https://raw.githubusercontent.com/reactjs/reactjs.org/main/static/html/single-file-example.html"
+                                    target="_blank" rel="nofollow noopener noreferrer">download this HTML file</a>, edit
+                                it, and
+                                open it from the local filesystem in your browser. It does a slow runtime code
+                                transformation,
+                                so we’d only recommend using this for simple demos.</p>
+                            <h3 id="add-react-to-a-website"><a href="#add-react-to-a-website" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Add React to a Website </h3>
+                            <p>You can <a href="/docs/add-react-to-a-website.html">add React to an HTML page in one
+                                    minute</a>.
+                                You can then either gradually expand its presence, or keep it contained to a few dynamic
+                                widgets.</p>
+                            <h3 id="create-a-new-react-app"><a href="#create-a-new-react-app" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Create a New React App </h3>
+                            <p>When starting a React project, a <a href="/docs/add-react-to-a-website.html">simple HTML
+                                    page
+                                    with script tags</a> might still be the best option. It only takes a minute to set
+                                up!</p>
+                            <p>As your application grows, you might want to consider a more integrated setup. There are
+                                several
+                                JavaScript toolchains we recommend for larger applications. Each of them can work with
+                                little to
+                                no configuration and lets you take full advantage of the rich React ecosystem. <a
+                                    href="/docs/create-a-new-react-app.html">Learn how.</a></p>
+                            <h2 id="learn-react"><a href="#learn-react" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Learn React </h2>
+                            <p>People come to React from different backgrounds and with different learning styles.
+                                Whether you
+                                prefer a more theoretical or a practical approach, we hope you’ll find this section
+                                helpful.</p>
+                            <ul>
+                                <li>If you prefer to <strong>learn by doing</strong>, start with our <a
+                                        href="/tutorial/tutorial.html">practical tutorial</a>.</li>
+                                <li>If you prefer to <strong>learn concepts step by step</strong>, start with our <a
+                                        href="/docs/hello-world.html">guide to main concepts</a>.</li>
+                            </ul>
+                            <p>Like any unfamiliar technology, React does have a learning curve. With practice and some
+                                patience, you <em>will</em> get the hang of it.</p>
+                            <h3 id="first-examples"><a href="#first-examples" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>First Examples </h3>
+                            <p>The <a href="/">React homepage</a> contains a few small React examples with a live
+                                editor. Even
+                                if you don’t know anything about React yet, try changing their code and see how it
+                                affects the
+                                result.</p>
+                            <h3 id="react-for-beginners"><a href="#react-for-beginners" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>React for Beginners </h3>
+                            <p>If you feel that the React documentation goes at a faster pace than you’re comfortable
+                                with,
+                                check out <a href="https://www.taniarascia.com/getting-started-with-react/"
+                                    target="_blank" rel="nofollow noopener noreferrer">this overview of React by Tania
+                                    Rascia</a>. It introduces
+                                the most important React concepts in a detailed, beginner-friendly way. Once you’re
+                                done, give
+                                the documentation another try!</p>
+                            <h3 id="react-for-designers"><a href="#react-for-designers" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>React for Designers </h3>
+                            <p>If you’re coming from a design background, <a href="https://reactfordesigners.com/"
+                                    target="_blank" rel="nofollow noopener noreferrer">these resources</a> are a great
+                                place to
+                                get started.</p>
+                            <h3 id="javascript-resources"><a href="#javascript-resources" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>JavaScript Resources </h3>
+                            <p>The React documentation assumes some familiarity with programming in the JavaScript
+                                language. You
+                                don’t have to be an expert, but it’s harder to learn both React and JavaScript at the
+                                same time.
+                            </p>
+                            <p>We recommend going through <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript"
+                                    target="_blank" rel="nofollow noopener noreferrer">this JavaScript overview</a> to
+                                check
+                                your knowledge level. It will take you between 30 minutes and an hour but you will feel
+                                more
+                                confident learning React.</p>
+                            <blockquote>
+                                <p>Tip</p>
+                                <p>Whenever you get confused by something in JavaScript, <a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                                        rel="nofollow noopener noreferrer">MDN</a> and <a
+                                        href="https://javascript.info/" target="_blank"
+                                        rel="nofollow noopener noreferrer">javascript.info</a> are great
+                                    websites to check. There are also <a href="/community/support.html">community
+                                        support
+                                        forums</a> where you can ask for help.</p>
+                            </blockquote>
+                            <h3 id="practical-tutorial"><a href="#practical-tutorial" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Practical Tutorial </h3>
+                            <p>If you prefer to <strong>learn by doing,</strong> check out our <a
+                                    href="/tutorial/tutorial.html">practical tutorial</a>. In this tutorial, we build a
+                                tic-tac-toe game in React. You might be tempted to skip it because you’re not into
+                                building
+                                games — but give it a chance. The techniques you’ll learn in the tutorial are
+                                fundamental to
+                                building <em>any</em> React apps, and mastering it will give you a much deeper
+                                understanding.
+                            </p>
+                            <h3 id="step-by-step-guide"><a href="#step-by-step-guide" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Step-by-Step Guide </h3>
+                            <p>If you prefer to <strong>learn concepts step by step,</strong> our <a
+                                    href="/docs/hello-world.html">guide to main concepts</a> is the best place to start.
+                                Every
+                                next chapter in it builds on the knowledge introduced in the previous chapters so you
+                                won’t miss
+                                anything as you go along.</p>
+                            <h3 id="thinking-in-react"><a href="#thinking-in-react" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Thinking in React </h3>
+                            <p>Many React users credit reading <a href="/docs/thinking-in-react.html">Thinking in
+                                    React</a> as
+                                the moment React finally “clicked” for them. It’s probably the oldest React walkthrough
+                                but it’s
+                                still just as relevant.</p>
+                            <h3 id="recommended-courses"><a href="#recommended-courses" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Recommended Courses </h3>
+                            <p>Sometimes people find third-party books and video courses more helpful than the official
+                                documentation. We maintain <a href="/community/courses.html">a list of commonly
+                                    recommended
+                                    resources</a>, some of which are free.</p>
+                            <h3 id="advanced-concepts"><a href="#advanced-concepts" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Advanced Concepts </h3>
+                            <p>Once you’re comfortable with the <a href="/docs/hello-world.html">main concepts</a> and
+                                played
+                                with React a little bit, you might be interested in more advanced topics. This section
+                                will
+                                introduce you to the powerful, but less commonly used React features like <a
+                                    href="/docs/context.html">context</a> and <a
+                                    href="/docs/refs-and-the-dom.html">refs</a>.
+                            </p>
+                            <h3 id="api-reference"><a href="#api-reference" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>API Reference </h3>
+                            <p>This documentation section is useful when you want to learn more details about a
+                                particular React
+                                API. For example, <a href="/docs/react-component.html"><code
+                                        class="gatsby-code-text">React.Component</code> API reference</a> can provide
+                                you with
+                                details on how <code class="gatsby-code-text">setState()</code> works, and what
+                                different
+                                lifecycle methods are useful for.</p>
+                            <h3 id="glossary-and-faq"><a href="#glossary-and-faq" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Glossary and FAQ </h3>
+                            <p>The <a href="/docs/glossary.html">glossary</a> contains an overview of the most common
+                                terms
+                                you’ll see in the React documentation. There is also a FAQ section dedicated to short
+                                questions
+                                and answers about common topics, including <a href="/docs/faq-ajax.html">making AJAX
+                                    requests</a>, <a href="/docs/faq-state.html">component state</a>, and <a
+                                    href="/docs/faq-structure.html">file structure</a>.</p>
+                            <h2 id="staying-informed"><a href="#staying-informed" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Staying Informed </h2>
+                            <p>The <a href="/blog/">React blog</a> is the official source for the updates from the React
+                                team.
+                                Anything important, including release notes or deprecation notices, will be posted there
+                                first.
+                            </p>
+                            <p>You can also follow the <a href="https://twitter.com/reactjs" target="_blank"
+                                    rel="nofollow noopener noreferrer">@reactjs account</a> on Twitter, but you won’t
+                                miss
+                                anything essential if you only read the blog.</p>
+                            <p>Not every React release deserves its own blog post, but you can find a detailed changelog
+                                for
+                                every release in the <a href="https://github.com/facebook/react/blob/main/CHANGELOG.md"
+                                    target="_blank" rel="nofollow noopener noreferrer"><code
+                                        class="gatsby-code-text">CHANGELOG.md</code> file in the React repository</a>,
+                                as well
+                                as on the <a href="https://github.com/facebook/react/releases" target="_blank"
+                                    rel="nofollow noopener noreferrer">Releases</a> page.</p>
+                            <h2 id="versioned-documentation"><a href="#versioned-documentation" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Versioned Documentation </h2>
+                            <p>This documentation always reflects the latest stable version of React. Since React 16,
+                                you can
+                                find older versions of the documentation on a <a href="/versions">separate page</a>.
+                                Note that
+                                documentation for past versions is snapshotted at the time of the release, and isn’t
+                                being
+                                continuously updated.</p>
+                            <h2 id="something-missing"><a href="#something-missing" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Something Missing? </h2>
+                            <p>If something is missing in the documentation or if you found some part confusing, please
+                                <a href="https://github.com/reactjs/reactjs.org/issues/new" target="_blank"
+                                    rel="nofollow noopener noreferrer">file an issue for the documentation
+                                    repository</a> with
+                                your suggestions for improvement, or tweet at the <a href="https://twitter.com/reactjs"
+                                    target="_blank" rel="nofollow noopener noreferrer">@reactjs account</a>. We love
+                                hearing
+                                from you!
+                            </p>
+                        </div>
+                       
+                    </div>
+                </article>
+            </div>
+            <div class="css-1m173d1"><span class="css-k7orbq"><span>Is this page useful?<button
+                aria-label="Yes" class="css-bbeeea"><svg focusable="false"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.13 89.76"
+                    class="css-15scox9">
+                    <path
+                        d="M22.9 6a18.57 18.57 0 002.67 8.4 25.72 25.72 0 008.65 7.66c3.86 2 8.67 7.13 13.51 11 3.86 3.11 8.57 7.11 11.54 8.45s13.59.26 14.64 1.17c1.88 1.63 1.55 9-.11 15.25-1.61 5.86-5.96 10.55-6.48 16.86-.4 4.83-2.7 4.88-10.93 4.88h-1.35c-3.82 0-8.24 2.93-12.92 3.62a68 68 0 01-9.73.5c-3.57 0-7.86-.08-13.25-.08-3.56 0-4.71-1.83-4.71-4.48h8.42a3.51 3.51 0 000-7H12.28a2.89 2.89 0 01-2.88-2.88 1.91 1.91 0 01.77-1.78h16.46a3.51 3.51 0 000-7H12.29c-3.21 0-4.84-1.83-4.84-4a6.41 6.41 0 011.17-3.78h19.06a3.5 3.5 0 100-7H9.75A3.51 3.51 0 016 42.27a3.45 3.45 0 013.75-3.48h13.11c5.61 0 7.71-3 5.71-5.52-4.43-4.74-10.84-12.62-11-18.71-.15-6.51 2.6-7.83 5.36-8.56m0-6a6.18 6.18 0 00-1.53.2c-6.69 1.77-10 6.65-9.82 14.5.08 5.09 2.99 11.18 8.52 18.09H9.74a9.52 9.52 0 00-6.23 16.9 12.52 12.52 0 00-2.07 6.84 9.64 9.64 0 003.65 7.7 7.85 7.85 0 00-1.7 5.13 8.9 8.9 0 005.3 8.13 6 6 0 00-.26 1.76c0 6.37 4.2 10.48 10.71 10.48h13.25a73.75 73.75 0 0010.6-.56 35.89 35.89 0 007.58-2.18 17.83 17.83 0 014.48-1.34h1.35c4.69 0 7.79 0 10.5-1 3.85-1.44 6-4.59 6.41-9.38.2-2.46 1.42-4.85 2.84-7.62a41.3 41.3 0 003.42-8.13 48 48 0 001.59-10.79c.1-5.13-1-8.48-3.35-10.55-2.16-1.87-4.64-1.87-9.6-1.88a46.86 46.86 0 01-6.64-.29c-1.92-.94-5.72-4-8.51-6.3l-1.58-1.28c-1.6-1.3-3.27-2.79-4.87-4.23-3.33-3-6.47-5.79-9.61-7.45a20.2 20.2 0 01-6.43-5.53 12.44 12.44 0 01-1.72-5.36 6 6 0 00-6-5.86z">
+                    </path>
+                </svg></button><button aria-label="No" class="css-8ypg2d"><svg
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.13 89.76"
+                    class="css-shr7pv">
+                    <path
+                        d="M22.9 6a18.57 18.57 0 002.67 8.4 25.72 25.72 0 008.65 7.66c3.86 2 8.67 7.13 13.51 11 3.86 3.11 8.57 7.11 11.54 8.45s13.59.26 14.64 1.17c1.88 1.63 1.55 9-.11 15.25-1.61 5.86-5.96 10.55-6.48 16.86-.4 4.83-2.7 4.88-10.93 4.88h-1.35c-3.82 0-8.24 2.93-12.92 3.62a68 68 0 01-9.73.5c-3.57 0-7.86-.08-13.25-.08-3.56 0-4.71-1.83-4.71-4.48h8.42a3.51 3.51 0 000-7H12.28a2.89 2.89 0 01-2.88-2.88 1.91 1.91 0 01.77-1.78h16.46a3.51 3.51 0 000-7H12.29c-3.21 0-4.84-1.83-4.84-4a6.41 6.41 0 011.17-3.78h19.06a3.5 3.5 0 100-7H9.75A3.51 3.51 0 016 42.27a3.45 3.45 0 013.75-3.48h13.11c5.61 0 7.71-3 5.71-5.52-4.43-4.74-10.84-12.62-11-18.71-.15-6.51 2.6-7.83 5.36-8.56m0-6a6.18 6.18 0 00-1.53.2c-6.69 1.77-10 6.65-9.82 14.5.08 5.09 2.99 11.18 8.52 18.09H9.74a9.52 9.52 0 00-6.23 16.9 12.52 12.52 0 00-2.07 6.84 9.64 9.64 0 003.65 7.7 7.85 7.85 0 00-1.7 5.13 8.9 8.9 0 005.3 8.13 6 6 0 00-.26 1.76c0 6.37 4.2 10.48 10.71 10.48h13.25a73.75 73.75 0 0010.6-.56 35.89 35.89 0 007.58-2.18 17.83 17.83 0 014.48-1.34h1.35c4.69 0 7.79 0 10.5-1 3.85-1.44 6-4.59 6.41-9.38.2-2.46 1.42-4.85 2.84-7.62a41.3 41.3 0 003.42-8.13 48 48 0 001.59-10.79c.1-5.13-1-8.48-3.35-10.55-2.16-1.87-4.64-1.87-9.6-1.88a46.86 46.86 0 01-6.64-.29c-1.92-.94-5.72-4-8.51-6.3l-1.58-1.28c-1.6-1.3-3.27-2.79-4.87-4.23-3.33-3-6.47-5.79-9.61-7.45a20.2 20.2 0 01-6.43-5.53 12.44 12.44 0 01-1.72-5.36 6 6 0 00-6-5.86z">
+                    </path>
+                </svg></button></span></span><a
+        href="https://github.com/reactjs/reactjs.org/tree/main/content/docs/getting-started.md"
+        class="css-1epz0fh">Edit this page</a>
+        
+    </div>
+    <footer class="ft">
+        <div class="css-tctv7l">
+            <div class="css-17njq4x">
+                <div class="row">
+                    <div class="col-sm ft-part">
+                        <section class="css-1tq073i"><a href="https://opensource.facebook.com/projects/" target="_blank"
+                            rel="noopener"><img alt="Facebook Open Source"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAABaCAMAAADQMV5DAAAC3FBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+GTFYVAAAA9HRSTlMAG7O/KQR48v/+hA5W2+piObG8RBSU/fehIG7stSWl9nkIStbYU0XN4FUvrHoDcOi3OAuLmheOmRVm4rtBNbDucsnfXlDUJpuGB3vtM3+mHBKMEF3FSDzmaMLpWN7PRh2XkAaAo3X4riuiBctS3WAxtvFx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"
+                                class="css-1izr7si"></a>
+                        <p class="css-1yy5aal">Copyright © 2021 Facebook Inc.</p>
+                    </section>
+                    </div>
+                    <div class="col-sm ft-part">
+                        <div class="css-1m3wp4q">
+                            <div class="li-title">Docs</div>
+                            
+                           
+                            <a class="css-8l81zy"
+                                href="/docs/getting-started.html">Installation</a><br><a class="css-8l81zy"
+                                href="/docs/hello-world.html">Main Concepts</a><br><a class="css-8l81zy"
+                                href="/docs/accessibility.html">Advanced Guides</a><br><a class="css-8l81zy"
+                                href="/docs/react-api.html">API Reference</a><br><a class="css-8l81zy"
+                                href="/docs/hooks-intro.html">Hooks</a><br><a class="css-8l81zy"
+                                href="/docs/testing.html">Testing</a><br><a class="css-8l81zy"
+                                href="/docs/how-to-contribute.html">Contributing</a><br><a class="css-8l81zy"
+                                href="/docs/faq-ajax.html">FAQ</a>
+                            <br><br><br>
+                                <div class="li-title">Community</div><a
+                                href="https://github.com/facebook/react/blob/main/CODE_OF_CONDUCT.md"
+                                class="css-8l81zy">Code of Conduct<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                    height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a><br><a class="css-8l81zy" href="/community/support.html">Community Resources</a>
+                        </div>  
+                        </div>
+                    
+                    <div class="col-sm ft-part">
+                        <div class="css-1m3wp4q">
+                            <div class="li-title">Channels</div><a href="https://github.com/facebook/react"
+                                target="_blank" rel="noopener" class="css-8l81zy">GitHub<svg x="0px" y="0px"
+                                    viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a><br><a href="https://stackoverflow.com/questions/tagged/reactjs" target="_blank"
+                                rel="noopener" class="css-8l81zy">Stack Overflow<svg x="0px" y="0px"
+                                    viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a><br><a href="https://reactjs.org/community/support.html#popular-discussion-forums"
+                                target="_blank" rel="noopener" class="css-8l81zy">Discussion Forums<svg x="0px" y="0px"
+                                    viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a><br><a href="https://discord.gg/reactiflux" target="_blank" rel="noopener"
+                                class="css-8l81zy">Reactiflux Chat<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                    height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a><br><a href="https://dev.to/t/react" target="_blank" rel="noopener"
+                                class="css-8l81zy">DEV Community<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                    height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a><br><a href="https://www.facebook.com/react" target="_blank" rel="noopener"
+                                class="css-8l81zy">Facebook<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                    height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a><br><a href="https://twitter.com/reactjs" target="_blank" rel="noopener"
+                                class="css-8l81zy">Twitter<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                    height="15" class="css-83uoqv">
+                                    <path fill="currentColor" d="
+        M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+        0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+      "></path>
+                                    <polygon fill="currentColor" points="
+        45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+        14.9 62.8,22.9 71.5,22.9
+        "></polygon>
+                                </svg></a>
+                       
+                       
+                            </div>
+                            <br><br><br>
+                            <div class="li-title">More</div><a class="css-8l81zy"
+                            href="/tutorial/tutorial.html">Tutorial</a><br><a class="css-8l81zy" href="/blog">Blog</a><br><a
+                            class="css-8l81zy" href="/acknowledgements.html">Acknowledgements</a><br><a
+                            href="https://reactnative.dev/" target="_blank" rel="noopener" class="css-8l81zy">React
+                            Native<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"
+                                class="css-83uoqv">
+                                <path fill="currentColor" d="
+    M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+    0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+  "></path>
+                                <polygon fill="currentColor" points="
+    45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+    14.9 62.8,22.9 71.5,22.9
+    "></polygon>
+                            </svg></a><br><a href="https://opensource.facebook.com/legal/privacy"
+                            class="css-8l81zy">Privacy<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                height="15" class="css-83uoqv">
+                                <path fill="currentColor" d="
+    M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+    0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+  "></path>
+                                <polygon fill="currentColor" points="
+    45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+    14.9 62.8,22.9 71.5,22.9
+    "></polygon>
+                            </svg></a><br><a href="https://opensource.facebook.com/legal/terms"
+                            class="css-8l81zy">Terms<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                height="15" class="css-83uoqv">
+                                <path fill="currentColor" d="
+    M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+    0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+  "></path>
+                                <polygon fill="currentColor" points="
+    45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+    14.9 62.8,22.9 71.5,22.9
+    "></polygon>
+                            </svg></a>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+        </div>
+
+        <!-- side nav -->
+        <div class="col-4" style="transition: opacity 0.5s ease 0s;">
+            <div class="side">
+                <div class="css-1d35tl3" style="transform: translate(0px, 40px); transition: transform 0.5s ease 0s;">
+                    <nav class="css-7stz2q css-1aai96l">
+
+                        <!-- Installation -->
+                        <div>
+                            <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                            data-toggle="collapse" data-target="#collapseExample7" aria-controls="collapseExample7">
+                            <div class="drop-down">
+                                Installation
+                                    <svg viewBox="0 0 926.23699 573.74994" version="1.1"
+                                        x="0px" y="0px" width="10" height="10" class="">
+                                        <g transform="translate(904.92214,-879.1482)">
+                                            <path d="
+            m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+            -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+            0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+            -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+            -174.68583 0.6895,0 26.281,25.03215 56.8701,
+            55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+            -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+            -104.0616 -231.873,-231.248 z
+          " fill="currentColor"></path>
+                                        </g>
+                                    </svg></div>
+                            </button>
+
+                            <div class="collapse" id="collapseExample7">
+                                <a class="" href="#">Getting
+                                    Started</a> 
+                                <a class="" href="#">Add React
+                                    to
+                                    a Website</a> 
+                                <a class="" href="#">Create a
+                                    New
+                                    React App</a> 
+                            </div>
+                        </div>
+                        
+                        <!-- main concepts -->
+                        <div>
+                      <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                                data-toggle="collapse" data-target="#collapseExample" aria-controls="collapseExample">
+                                <div class="drop-down">Main Concepts
+                                    <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10"
+                                        height="10" class="css-1jiuhrf">
+                                        <g transform="translate(904.92214,-879.1482)">
+                                            <path d="
+        m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+        -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+        0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+        -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+        -174.68583 0.6895,0 26.281,25.03215 56.8701,
+        55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+        -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+        -104.0616 -231.873,-231.248 z
+      " fill="currentColor"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </button>
+
+                            <div class="collapse" id="collapseExample">
+                                <a class="" href="#">1. Hello World</a> 
+                                <a class="" href="#">2. Introducing JSX</a> 
+                                <a class="" href="#">Something else here</a> 
+                            </div>
+                        </div>
+                    
+                    <!-- Advanced Guides -->
+                            <div>
+                                <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                                data-toggle="collapse" data-target="#collapseExample1" aria-controls="collapseExample1">
+                                    <div class="drop-down">Advanced Guides
+                                        <svg viewBox="0 0 926.23699 573.74994"
+                                            version="1.1" x="0px" y="0px" width="10" height="10" class="css-1jiuhrf">
+                                            <g transform="translate(904.92214,-879.1482)">
+                                                <path d="
+            m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+            -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+            0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+            -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+            -174.68583 0.6895,0 26.281,25.03215 56.8701,
+            55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+            -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+            -104.0616 -231.873,-231.248 z
+          " fill="currentColor"></path>
+                                            </g>
+                                        </svg></div>
+                                </button>
+                                <div class="collapse" id="collapseExample1">
+                                    <a class="" href="#">Accessibility</a> 
+                                    <a class="" href="#">Code-Splitting</a> 
+                                    <a class="" href="#">Context</a> 
+                                    <a class="" href="#">Error</a> 
+                                    <a class="" href="#">Forwarding</a> 
+                                </div>
+                            </div>
+
+                            <!-- API Reference -->
+                            <div>
+                                <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                                data-toggle="collapse" data-target="#collapseExample2" aria-controls="collapseExample2">
+                                    <div class="drop-down">API Reference
+                                        <svg viewBox="0 0 926.23699 573.74994"
+                                            version="1.1" x="0px" y="0px" width="10" height="10" class="css-1jiuhrf">
+                                            <g transform="translate(904.92214,-879.1482)">
+                                                <path d="
+            m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+            -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+            0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+            -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+            -174.68583 0.6895,0 26.281,25.03215 56.8701,
+            55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+            -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+            -104.0616 -231.873,-231.248 z
+          " fill="currentColor"></path>
+                                            </g>
+                                        </svg></div>
+                                </button>
+
+                                <div class="collapse" id="collapseExample2">
+                                    <a class="" href="#">React</a> 
+                                    <a class="" href="#">React.Component</a> 
+                                    <a class="" href="#">ReactDOM</a> 
+                                    <a class="" href="#">ReactDOMServe</a> 
+                                    <a class="" href="#">DOM Elements</a> 
+                                </div>
+                            </div>
+
+                            <!-- hooks -->
+                            <div>
+                                <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                                data-toggle="collapse" data-target="#collapseExample3" aria-controls="collapseExample3">
+                                    <div class="drop-down">Hooks<svg viewBox="0 0 926.23699 573.74994" version="1.1"
+                                            x="0px" y="0px" width="10" height="10" class="css-1jiuhrf">
+                                            <g transform="translate(904.92214,-879.1482)">
+                                                <path d="
+            m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+            -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+            0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+            -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+            -174.68583 0.6895,0 26.281,25.03215 56.8701,
+            55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+            -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+            -104.0616 -231.873,-231.248 z
+" fill="currentColor"></path>
+                                            </g>
+                                        </svg></div>
+                                </button>
+
+                                <div class="collapse" id="collapseExample3">
+                                    <a class="" href="#">1.
+                                        Introducing
+                                        Hooks</a> 
+                                    <a class="" href="/docs/hooks-overview.html">2.
+                                        Hooks at a
+                                        Glance</a> 
+                                <a class="" href="/docs/hooks-state.html">3. Using
+                                        the State
+                                        Hook</a> 
+                                <a class="" href="/docs/hooks-effect.html">4.
+                                        Using the Effect
+                                        Hook</a> 
+                                <a class="" href="/docs/hooks-rules.html">5. Rules
+                                        of
+                                        Hooks</a> 
+                               
+                                <a class="" href="/docs/hooks-custom.html">6.
+                                        Building Your
+                                        Own
+                                        Hooks</a> 
+                                <a class="" href="/docs/hooks-reference.html">7.
+                                        Hooks API
+                                        Reference</a> 
+                               <a class="" href="/docs/hooks-faq.html">8. Hooks
+                                        FAQ</a> 
+                                </div>    
+                            </div>
+
+                            <!-- Testing -->
+                            <div>
+                                <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                                data-toggle="collapse" data-target="#collapseExample4" aria-controls="collapseExample4">
+                                    <div class="drop-down">Testing
+                                        <svg viewBox="0 0 926.23699 573.74994" version="1.1"
+                                            x="0px" y="0px" width="10" height="10" class="css-1jiuhrf">
+                                            <g transform="translate(904.92214,-879.1482)">
+                                                <path d="
+            m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+            -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+            0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+            -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+            -174.68583 0.6895,0 26.281,25.03215 56.8701,
+            55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+            -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+            -104.0616 -231.873,-231.248 z
+          " fill="currentColor"></path>
+                                            </g>
+                                        </svg></div>
+                                </button>                           
+                                
+                                <div class="collapse" id="collapseExample4">
+                                    <a class="" href="#">Testing
+                                        Overview</a> 
+                                    <a class="" href="#">Testing
+                                        Recipes</a> 
+                                    <a class="" href="#">Testing
+                                        Environments</a>          
+                                </div>
+                            </div>
+
+                            <!-- Contributing -->
+                            <div>
+                                <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                                data-toggle="collapse" data-target="#collapseExample5" aria-controls="collapseExample5">
+                                    <div class="drop-down">Contributing
+                                        <svg viewBox="0 0 926.23699 573.74994"
+                                            version="1.1" x="0px" y="0px" width="10" height="10" class="css-1jiuhrf">
+                                            <g transform="translate(904.92214,-879.1482)">
+                                                <path d="
+            m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+            -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+            0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+            -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+            -174.68583 0.6895,0 26.281,25.03215 56.8701,
+            55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+            -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+            -104.0616 -231.873,-231.248 z
+          " fill="currentColor"></path>
+                                            </g>
+                                        </svg></div>
+                                </button>
+
+                                <div class="collapse" id="collapseExample5">
+                                    <a class="" href="#">How to
+                                        Contribute</a> 
+                                    <a class="" href="#">Codebase
+                                        Overview</a> 
+                                    <a class="" href="#">Implementation
+                                        Notes</a> 
+                                    <a class="" href="#">Design
+                                        Principles</a> 
+                                </div>
+                            </div>
+
+                            <!-- faq -->
+                            <div>
+                                <button aria-expanded="false" class="css-1j8jxus" id="dropdownMenuButton"
+                                data-toggle="collapse" data-target="#collapseExample6" aria-controls="collapseExample6">
+                                    <div class="drop-down">FAQ
+                                        <svg viewBox="0 0 926.23699 573.74994" version="1.1"
+                                            x="0px" y="0px" width="10" height="10" class="css-1jiuhrf">
+                                            <g transform="translate(904.92214,-879.1482)">
+                                                <path d="
+            m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+            -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+            0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+            -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+            -174.68583 0.6895,0 26.281,25.03215 56.8701,
+            55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+            -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+            -104.0616 -231.873,-231.248 z
+          " fill="currentColor"></path>
+                                            </g>
+                                        </svg></div>
+                                </button>
+                                <div class="collapse" id="collapseExample6">
+                                    <a class="" href="#">AJAX and
+                                        APIs</a> 
+                                    <a class="" href="#">Babel,
+                                        JSX, and Build
+                                        Steps</a> 
+                                    <a class="" href="#">Passing Functions
+                                        to
+                                        Components</a> 
+                                    <a class="" href="#">Component
+                                        State</a> 
+                                    <a class="" href="#">Styling
+                                        and CSS 
+                                </div>
+                            </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

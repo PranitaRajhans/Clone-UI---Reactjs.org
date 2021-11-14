@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="D:\front-end projects\React\index.css">
+    <link rel="stylesheet" href="D:\front-end projects\React\docs.css">
+    <link rel="stylesheet" href="D:\front-end projects\React\tutorial.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>React JS</title>
+
+
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <header class="css-19rsoyj">
+        <div class="css-tctv7l">
+            <div class="css-iiezwn">
+                <a class="css-4ivotw" href="D:\front-end projects\React\index.html">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+                        alt="" height="20"><span class="css-184keb2">React</span></a>
+                <nav class="css-79txt3">
+                    <a class="css-hobwqm" href="D:\front-end projects\React\docs.html">
+                        Docs</a>
+                    <a aria-current="page" class="css-li68ai"
+                        href="D:\front-end projects\React\tutorial.html">Tutorial<span class="css-2y24fj"></span></a>
+                    <a class="css-hobwqm" href="D:\front-end projects\React\blogs.html">Blog</a>
+                    <a class="css-hobwqm" href="D:\front-end projects\React\community.html">Community</a>
+                </nav>
+
+
+                <form class="css-7vmqep"><span class="algolia-autocomplete"
+                        style="position: relative; display: inline-block; direction: ltr;"><input
+                            id="algolia-doc-search" type="search" placeholder="Search" aria-label="Search docs"
+                            class="css-7dpbpx ds-input" autocomplete="off" spellcheck="false" role="combobox"
+                            aria-autocomplete="list" aria-expanded="false" aria-labelledby="algolia-doc-search"
+                            aria-owns="algolia-autocomplete-listbox-4" dir="auto"
+                            style="position: relative; vertical-align: top;">
+                        <pre aria-hidden="true"
+                            style="position: absolute; visibility: hidden; white-space: pre; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 300; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+                        <span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-4"
+                            style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;">
+                            <div class="ds-dataset-5"></div>
+                        </span>
+                    </span></form>
+                <div class="css-nypjs8"><a class="css-zvm479" href="/versions">v17.0.2</a><a class="css-1upvlu3"
+                        href="/languages"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d=" M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+                                class="css-c4d79v"></path>
+                        </svg> <span class="css-1rsw1pf">Languages</span></a><a
+                        href="https://github.com/facebook/react/" target="_blank" rel="noopener"
+                        class="css-6oo1gu">GitHub<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"
+                            class="css-19vhmgv">
+                            <path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+      0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+    "></path>
+                            <polygon fill="currentColor" points="
+      45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+      14.9 62.8,22.9 71.5,22.9
+      "></polygon>
+                        </svg></a></div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="row no-gutters">
+
+        <!-- content -->
+        <div class="col-8">
+            <div class="main" data-bs-spy="scroll" data-bs-target="#navi">
+
+
+                <article class="css-174qq1k">
+                    <header class="css-hgc6lu">
+                        <br><br>
+                        <h1 class="css-c3aatb">Tutorial: Intro to React</h1>
+                    </header>
+                    <div class="css-124oy3v">
+                        <div class="css-15weewl">
+                            <p class="first-line">This tutorial doesn’t assume any existing React knowledge.</p>
+                            <h2 id="before-we-start-the-tutorial"><a href="#before-we-start-the-tutorial" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Before We Start the Tutorial </h2>
+                            <p>We will build a small game during this tutorial. <strong>You might be tempted to skip
+                                    it because you’re not building games — but give it a chance.</strong> The
+                                techniques you’ll learn in the tutorial are fundamental to building any React app,
+                                and mastering it will give you a deep understanding of React.</p>
+                            <blockquote>
+                                <p>Tip</p>
+                                <p>This tutorial is designed for people who prefer to <strong>learn by
+                                        doing</strong>. If you prefer learning concepts from the ground up, check
+                                    out our <a href="/docs/hello-world.html">step-by-step guide</a>. You might find
+                                    this tutorial and the guide complementary to each other.</p>
+                            </blockquote>
+                            <p>The tutorial is divided into several sections:</p>
+                            <ul>
+                                <li><a href="#setup-for-the-tutorial">Setup for the Tutorial</a> will give you
+                                    <strong>a starting point</strong> to follow the tutorial.
+                                </li>
+                                <li><a href="#overview">Overview</a> will teach you <strong>the
+                                        fundamentals</strong> of React: components, props, and state.</li>
+                                <li><a href="#completing-the-game">Completing the Game</a> will teach you
+                                    <strong>the most common techniques</strong> in React development.
+                                </li>
+                                <li><a href="#adding-time-travel">Adding Time Travel</a> will give you <strong>a
+                                        deeper insight</strong> into the unique strengths of React.</li>
+                            </ul>
+                            <p>You don’t have to complete all of the sections at once to get the value out of this
+                                tutorial. Try to get as far as you can — even if it’s one or two sections.</p>
+                            <h3 id="what-are-we-building"><a href="#what-are-we-building" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>What Are We Building? </h3>
+                            <p>In this tutorial, we’ll show how to build an interactive tic-tac-toe game with React.
+                            </p>
+                            <p>You can see what we’ll be building here: <strong><a
+                                        href="https://codepen.io/gaearon/pen/gWWZgR?editors=0010" target="_blank"
+                                        rel="nofollow noopener noreferrer">Final Result</a></strong>. If the code
+                                doesn’t make sense to you, or if you are unfamiliar with the code’s syntax, don’t
+                                worry! The goal of this tutorial is to help you understand React and its syntax.</p>
+                            <p>We recommend that you check out the tic-tac-toe game before continuing with the
+                                tutorial. One of the features that you’ll notice is that there is a numbered list to
+                                the right of the game’s board. This list gives you a history of all of the moves
+                                that have occurred in the game, and it is updated as the game progresses.</p>
+                            <p>You can close the tic-tac-toe game once you’re familiar with it. We’ll be starting
+                                from a simpler template in this tutorial. Our next step is to set you up so that you
+                                can start building the game.</p>
+                            <h3 id="prerequisites"><a href="#prerequisites" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Prerequisites </h3>
+                            <p>We’ll assume that you have some familiarity with HTML and JavaScript, but you should
+                                be able to follow along even if you’re coming from a different programming language.
+                                We’ll also assume that you’re familiar with programming concepts like functions,
+                                objects, arrays, and to a lesser extent, classes.</p>
+                            <p>If you need to review JavaScript, we recommend reading <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript"
+                                    target="_blank" rel="nofollow noopener noreferrer">this guide</a>. Note that
+                                we’re also using some features from ES6 — a recent version of JavaScript. In this
+                                tutorial, we’re using <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions"
+                                    target="_blank" rel="nofollow noopener noreferrer">arrow functions</a>, <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+                                    target="_blank" rel="nofollow noopener noreferrer">classes</a>, <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let"
+                                    target="_blank" rel="nofollow noopener noreferrer"><code
+                                        class="gatsby-code-text">let</code></a>, and <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const"
+                                    target="_blank" rel="nofollow noopener noreferrer"><code
+                                        class="gatsby-code-text">const</code></a> statements. You can use the <a
+                                    href="https://babeljs.io/repl/#?presets=react&amp;code_lz=MYewdgzgLgBApgGzgWzmWBeGAeAFgRgD4AJRBEAGhgHcQAnBAEwEJsB6AwgbgChRJY_KAEMAlmDh0YWRiGABXVOgB0AczhQAokiVQAQgE8AkowAUAcjogQUcwEpeAJTjDgUACIB5ALLK6aRklTRBQ0KCohMQk6Bx4gA"
+                                    target="_blank" rel="noreferrer">Babel REPL</a> to check what ES6 code compiles
+                                to.</p>
+                            <h2 id="setup-for-the-tutorial"><a href="#setup-for-the-tutorial" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Setup for the Tutorial </h2>
+                            <p>There are two ways to complete this tutorial: you can either write the code in your
+                                browser, or you can set up a local development environment on your computer.</p>
+                            <h3 id="setup-option-1-write-code-in-the-browser"><a
+                                    href="#setup-option-1-write-code-in-the-browser" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Setup Option 1: Write Code in the Browser </h3>
+                            <p>This is the quickest way to get started!</p>
+                            <p>First, open this <strong><a href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010"
+                                        target="_blank" rel="nofollow noopener noreferrer">Starter Code</a></strong>
+                                in a new tab. The new tab should display an empty tic-tac-toe game board and React
+                                code. We will be editing the React code in this tutorial.</p>
+                            <p>You can now skip the second setup option, and go to the <a href="#overview">Overview</a>
+                                section to get an overview of React.</p>
+                            <h3 id="setup-option-2-local-development-environment"><a
+                                    href="#setup-option-2-local-development-environment" aria-hidden=""
+                                    class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16"
+                                        width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Setup Option 2: Local Development Environment </h3>
+                            <p>This is completely optional and not required for this tutorial!</p>
+                            <br>
+                            <details>
+                                <summary><b>Optional: Instructions for following along locally using your preferred
+                                        text editor</b></summary>
+                                <p>This setup requires more work but allows you to complete the tutorial using an
+                                    editor of your choice. Here are the steps to follow:</p>
+                                <ol>
+                                    <li>Make sure you have a recent version of <a href="https://nodejs.org/en/"
+                                            target="_blank" rel="nofollow noopener noreferrer">Node.js</a>
+                                        installed.</li>
+                                    <li>Follow the <a
+                                            href="/docs/create-a-new-react-app.html#create-react-app">installation
+                                            instructions for Create React App</a> to make a new project.</li>
+                                </ol>
+                                <div class="gatsby-highlight" data-language="bash">
+                                    <pre
+                                        class="gatsby-code-bash"><code class="gatsby-code-bash">npx create-react-app my-app</code></pre>
+                                </div>
+                                <ol start="3">
+                                    <li>Delete all files in the <code class="gatsby-code-text">src/</code> folder of
+                                        the new project </li>
+                                </ol>
+                                <blockquote>
+                                    <p>Note:</p>
+                                    <p><strong>Don’t delete the entire <code class="gatsby-code-text">src</code>
+                                            folder, just the original source files inside it.</strong> We’ll replace
+                                        the default source files with examples for this project in the next step.
+                                    </p>
+                                </blockquote>
+                                <div class="gatsby-highlight" data-language="bash">
+                                    <pre
+                                        class="gatsby-code-bash"><code class="gatsby-code-bash"><span class="token builtin class-name">cd</span> my-app
+                        <span class="token builtin class-name">cd</span> src
+                        
+                        <span class="token comment"># If you're using a Mac or Linux:</span>
+                        <span class="token function">rm</span> -f *
+                        
+                        <span class="token comment"># Or, if you're on Windows:</span>
+                        del *
+                        
+                        <span class="token comment"># Then, switch back to the project folder</span>
+                        <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span></code></pre>
+                                </div>
+                                <ol start="4">
+                                    <li>Add a file named <code class="gatsby-code-text">index.css</code> in the
+                                        <code class="gatsby-code-text">src/</code> folder with <a
+                                            href="https://codepen.io/gaearon/pen/oWWQNa?editors=0100" target="_blank"
+                                            rel="nofollow noopener noreferrer">this CSS code</a>.
+                                    </li>
+                                    <li>Add a file named <code class="gatsby-code-text">index.js</code> in the <code
+                                            class="gatsby-code-text">src/</code> folder with <a
+                                            href="https://codepen.io/gaearon/pen/oWWQNa?editors=0010" target="_blank"
+                                            rel="nofollow noopener noreferrer">this JS code</a>.
+                                    </li>
+                                    <li>Add these three lines to the top of <code
+                                            class="gatsby-code-text">index.js</code> in the <code
+                                            class="gatsby-code-text">src/</code> folder:</li>
+                                </ol>
+                                <div class="gatsby-highlight" data-language="jsx">
+                                    <pre
+                                        class="gatsby-code-jsx"><code class="gatsby-code-jsx"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+                        <span class="token keyword">import</span> ReactDOM <span class="token keyword">from</span> <span class="token string">'react-dom'</span><span class="token punctuation">;</span>
+                        <span class="token keyword">import</span> <span class="token string">'./index.css'</span><span class="token punctuation">;</span></code></pre>
+                                </div>
+                                <p>Now if you run <code class="gatsby-code-text">npm start</code> in the project
+                                    folder and open <code class="gatsby-code-text">http://localhost:3000</code> in
+                                    the browser, you should see an empty tic-tac-toe field.</p>
+                                <p>We recommend following <a href="https://babeljs.io/docs/editors/" target="_blank"
+                                        rel="nofollow noopener noreferrer">these instructions</a> to configure
+                                    syntax highlighting for your editor.</p>
+                            </details>
+                            <h3 id="help-im-stuck"><a href="#help-im-stuck" aria-hidden="" class="anchor"><svg
+                                        aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16">
+                                        <path fill-rule="evenodd"
+                                            d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z">
+                                        </path>
+                                    </svg></a>Help, I’m Stuck! </h3>
+                            <p>If you get stuck, check out the <a href="/community/support.html">community support
+                                    resources</a>. In particular, <a href="https://discord.gg/reactiflux"
+                                    target="_blank" rel="nofollow noopener noreferrer">Reactiflux Chat</a> is a
+                                great way to get help quickly. If you don’t receive an answer, or if you remain
+                                stuck, please file an issue, and we’ll help you out.</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <div class="css-1m173d1"><span class="css-k7orbq"><span>Is this page useful?<button aria-label="Yes"
+                            class="css-bbeeea"><svg focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 81.13 89.76" class="css-15scox9">
+                                <path
+                                    d="M22.9 6a18.57 18.57 0 002.67 8.4 25.72 25.72 0 008.65 7.66c3.86 2 8.67 7.13 13.51 11 3.86 3.11 8.57 7.11 11.54 8.45s13.59.26 14.64 1.17c1.88 1.63 1.55 9-.11 15.25-1.61 5.86-5.96 10.55-6.48 16.86-.4 4.83-2.7 4.88-10.93 4.88h-1.35c-3.82 0-8.24 2.93-12.92 3.62a68 68 0 01-9.73.5c-3.57 0-7.86-.08-13.25-.08-3.56 0-4.71-1.83-4.71-4.48h8.42a3.51 3.51 0 000-7H12.28a2.89 2.89 0 01-2.88-2.88 1.91 1.91 0 01.77-1.78h16.46a3.51 3.51 0 000-7H12.29c-3.21 0-4.84-1.83-4.84-4a6.41 6.41 0 011.17-3.78h19.06a3.5 3.5 0 100-7H9.75A3.51 3.51 0 016 42.27a3.45 3.45 0 013.75-3.48h13.11c5.61 0 7.71-3 5.71-5.52-4.43-4.74-10.84-12.62-11-18.71-.15-6.51 2.6-7.83 5.36-8.56m0-6a6.18 6.18 0 00-1.53.2c-6.69 1.77-10 6.65-9.82 14.5.08 5.09 2.99 11.18 8.52 18.09H9.74a9.52 9.52 0 00-6.23 16.9 12.52 12.52 0 00-2.07 6.84 9.64 9.64 0 003.65 7.7 7.85 7.85 0 00-1.7 5.13 8.9 8.9 0 005.3 8.13 6 6 0 00-.26 1.76c0 6.37 4.2 10.48 10.71 10.48h13.25a73.75 73.75 0 0010.6-.56 35.89 35.89 0 007.58-2.18 17.83 17.83 0 014.48-1.34h1.35c4.69 0 7.79 0 10.5-1 3.85-1.44 6-4.59 6.41-9.38.2-2.46 1.42-4.85 2.84-7.62a41.3 41.3 0 003.42-8.13 48 48 0 001.59-10.79c.1-5.13-1-8.48-3.35-10.55-2.16-1.87-4.64-1.87-9.6-1.88a46.86 46.86 0 01-6.64-.29c-1.92-.94-5.72-4-8.51-6.3l-1.58-1.28c-1.6-1.3-3.27-2.79-4.87-4.23-3.33-3-6.47-5.79-9.61-7.45a20.2 20.2 0 01-6.43-5.53 12.44 12.44 0 01-1.72-5.36 6 6 0 00-6-5.86z">
+                                </path>
+                            </svg></button><button aria-label="No" class="css-8ypg2d"><svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 81.13 89.76" class="css-shr7pv">
+                                <path
+                                    d="M22.9 6a18.57 18.57 0 002.67 8.4 25.72 25.72 0 008.65 7.66c3.86 2 8.67 7.13 13.51 11 3.86 3.11 8.57 7.11 11.54 8.45s13.59.26 14.64 1.17c1.88 1.63 1.55 9-.11 15.25-1.61 5.86-5.96 10.55-6.48 16.86-.4 4.83-2.7 4.88-10.93 4.88h-1.35c-3.82 0-8.24 2.93-12.92 3.62a68 68 0 01-9.73.5c-3.57 0-7.86-.08-13.25-.08-3.56 0-4.71-1.83-4.71-4.48h8.42a3.51 3.51 0 000-7H12.28a2.89 2.89 0 01-2.88-2.88 1.91 1.91 0 01.77-1.78h16.46a3.51 3.51 0 000-7H12.29c-3.21 0-4.84-1.83-4.84-4a6.41 6.41 0 011.17-3.78h19.06a3.5 3.5 0 100-7H9.75A3.51 3.51 0 016 42.27a3.45 3.45 0 013.75-3.48h13.11c5.61 0 7.71-3 5.71-5.52-4.43-4.74-10.84-12.62-11-18.71-.15-6.51 2.6-7.83 5.36-8.56m0-6a6.18 6.18 0 00-1.53.2c-6.69 1.77-10 6.65-9.82 14.5.08 5.09 2.99 11.18 8.52 18.09H9.74a9.52 9.52 0 00-6.23 16.9 12.52 12.52 0 00-2.07 6.84 9.64 9.64 0 003.65 7.7 7.85 7.85 0 00-1.7 5.13 8.9 8.9 0 005.3 8.13 6 6 0 00-.26 1.76c0 6.37 4.2 10.48 10.71 10.48h13.25a73.75 73.75 0 0010.6-.56 35.89 35.89 0 007.58-2.18 17.83 17.83 0 014.48-1.34h1.35c4.69 0 7.79 0 10.5-1 3.85-1.44 6-4.59 6.41-9.38.2-2.46 1.42-4.85 2.84-7.62a41.3 41.3 0 003.42-8.13 48 48 0 001.59-10.79c.1-5.13-1-8.48-3.35-10.55-2.16-1.87-4.64-1.87-9.6-1.88a46.86 46.86 0 01-6.64-.29c-1.92-.94-5.72-4-8.51-6.3l-1.58-1.28c-1.6-1.3-3.27-2.79-4.87-4.23-3.33-3-6.47-5.79-9.61-7.45a20.2 20.2 0 01-6.43-5.53 12.44 12.44 0 01-1.72-5.36 6 6 0 00-6-5.86z">
+                                </path>
+                            </svg></button></span></span><a
+                    href="https://github.com/reactjs/reactjs.org/tree/main/content/docs/getting-started.md"
+                    class="css-1epz0fh">Edit this page</a>
+            </div>
+
+            <footer class="ft">
+                <div class="css-tctv7l">
+                    <div class="css-17njq4x">
+                        <div class="row">
+                            <div class="col-sm ft-part">
+                                <section class="css-1tq073i"><a href="https://opensource.facebook.com/projects/" target="_blank"
+                                    rel="noopener"><img alt="Facebook Open Source"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVQAAABaCAMAAADQMV5DAAAC3FBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+GTFYVAAAA9HRSTlMAG7O/KQR48v/+hA5W2+piObG8RBSU/fehIG7stSWl9nkIStbYU0XN4FUvrHoDcOi3OAuLmheOmRVm4rtBNbDucsnfXlDUJpuGB3vtM3+mHBKMEF3FSDzmaMLpWN7PRh2XkAaAo3X4riuiBctS3WAxtvFx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"
+                                        class="css-1izr7si"></a>
+                                <p class="css-1yy5aal">Copyright © 2021 Facebook Inc.</p>
+                            </section>
+                            </div>
+                            <div class="col-sm ft-part">
+                                <div class="css-1m3wp4q">
+                                    <div class="li-title">Docs</div>
+                                    
+                                   
+                                    <a class="css-8l81zy"
+                                        href="/docs/getting-started.html">Installation</a><br><a class="css-8l81zy"
+                                        href="/docs/hello-world.html">Main Concepts</a><br><a class="css-8l81zy"
+                                        href="/docs/accessibility.html">Advanced Guides</a><br><a class="css-8l81zy"
+                                        href="/docs/react-api.html">API Reference</a><br><a class="css-8l81zy"
+                                        href="/docs/hooks-intro.html">Hooks</a><br><a class="css-8l81zy"
+                                        href="/docs/testing.html">Testing</a><br><a class="css-8l81zy"
+                                        href="/docs/how-to-contribute.html">Contributing</a><br><a class="css-8l81zy"
+                                        href="/docs/faq-ajax.html">FAQ</a>
+                                    <br><br><br>
+                                        <div class="li-title">Community</div><a
+                                        href="https://github.com/facebook/react/blob/main/CODE_OF_CONDUCT.md"
+                                        class="css-8l81zy">Code of Conduct<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                            height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a><br><a class="css-8l81zy" href="/community/support.html">Community Resources</a>
+                                </div>  
+                                </div>
+                            
+                            <div class="col-sm ft-part">
+                                <div class="css-1m3wp4q">
+                                    <div class="li-title">Channels</div><a href="https://github.com/facebook/react"
+                                        target="_blank" rel="noopener" class="css-8l81zy">GitHub<svg x="0px" y="0px"
+                                            viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a><br><a href="https://stackoverflow.com/questions/tagged/reactjs" target="_blank"
+                                        rel="noopener" class="css-8l81zy">Stack Overflow<svg x="0px" y="0px"
+                                            viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a><br><a href="https://reactjs.org/community/support.html#popular-discussion-forums"
+                                        target="_blank" rel="noopener" class="css-8l81zy">Discussion Forums<svg x="0px" y="0px"
+                                            viewBox="0 0 100 100" width="15" height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a><br><a href="https://discord.gg/reactiflux" target="_blank" rel="noopener"
+                                        class="css-8l81zy">Reactiflux Chat<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                            height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a><br><a href="https://dev.to/t/react" target="_blank" rel="noopener"
+                                        class="css-8l81zy">DEV Community<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                            height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a><br><a href="https://www.facebook.com/react" target="_blank" rel="noopener"
+                                        class="css-8l81zy">Facebook<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                            height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a><br><a href="https://twitter.com/reactjs" target="_blank" rel="noopener"
+                                        class="css-8l81zy">Twitter<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                            height="15" class="css-83uoqv">
+                                            <path fill="currentColor" d="
+                M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+                0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+              "></path>
+                                            <polygon fill="currentColor" points="
+                45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+                14.9 62.8,22.9 71.5,22.9
+                "></polygon>
+                                        </svg></a>
+                               
+                               
+                                    </div>
+                                    <br><br><br>
+                                    <div class="li-title">More</div><a class="css-8l81zy"
+                                    href="/tutorial/tutorial.html">Tutorial</a><br><a class="css-8l81zy" href="/blog">Blog</a><br><a
+                                    class="css-8l81zy" href="/acknowledgements.html">Acknowledgements</a><br><a
+                                    href="https://reactnative.dev/" target="_blank" rel="noopener" class="css-8l81zy">React
+                                    Native<svg x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15"
+                                        class="css-83uoqv">
+                                        <path fill="currentColor" d="
+            M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+            0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+          "></path>
+                                        <polygon fill="currentColor" points="
+            45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+            14.9 62.8,22.9 71.5,22.9
+            "></polygon>
+                                    </svg></a><br><a href="https://opensource.facebook.com/legal/privacy"
+                                    class="css-8l81zy">Privacy<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                        height="15" class="css-83uoqv">
+                                        <path fill="currentColor" d="
+            M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+            0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+          "></path>
+                                        <polygon fill="currentColor" points="
+            45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+            14.9 62.8,22.9 71.5,22.9
+            "></polygon>
+                                    </svg></a><br><a href="https://opensource.facebook.com/legal/terms"
+                                    class="css-8l81zy">Terms<svg x="0px" y="0px" viewBox="0 0 100 100" width="15"
+                                        height="15" class="css-83uoqv">
+                                        <path fill="currentColor" d="
+            M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,
+            0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z
+          "></path>
+                                        <polygon fill="currentColor" points="
+            45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,
+            14.9 62.8,22.9 71.5,22.9
+            "></polygon>
+                                    </svg></a>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- side nav -->
+        <div class="col-4">
+            <div class="side" id="navi">
+                <div class="css-1sdm35g">
+                    <div class="css-1d35tl3">
+                        <nav class="css-7stz2q css-1aai96l">
+                            <div><button aria-expanded="true" aria-controls="section_06816293911731839"
+                                    class="drop-down">
+                                    <div class="">Tutorial
+                                        <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="10"
+                                            height="10" class="css-1mwek35">
+                                            <g transform="translate(904.92214,-879.1482)">
+                                                <path d="
+                    m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+                    -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+                    0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+                    -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+                    -174.68583 0.6895,0 26.281,25.03215 56.8701,
+                    55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+                    -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+                    -104.0616 -231.873,-231.248 z
+                  " fill="currentColor"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </button>
+                                <ul id="section_06816293911731839" class="css-ts0qly">
+                                    <li class="css-atv6j6"><a class="css-19pur11"
+                                            href="#before-we-start-the-tutorial">Before We Start
+                                            the Tutorial</a>
+                                        <ul class="css-140tz9x">
+                                            <li><a class="css-19pur11"
+                                                    href="D:\front-end projects\React\tutorial.html#what-are-we-building">What
+                                                    Are We
+                                                    Building?</a></li>
+                                            <li><a class="css-19pur11"
+                                                    href="D:\front-end projects\React\tutorial.html#prerequisites">Prerequisites</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="css-atv6j6"><a class="css-19pur11"
+                                            href="/tutorial/tutorial.html#setup-for-the-tutorial">Setup for the
+                                            Tutorial</a>
+                                        <ul class="css-140tz9x">
+                                            <li><a class="css-19pur11"
+                                                    href="/tutorial/tutorial.html#setup-option-1-write-code-in-the-browser">Option
+                                                    1:
+                                                    Write Code in the Browser</a></li>
+                                            <li><a class="css-19pur11"
+                                                    href="/tutorial/tutorial.html#setup-option-2-local-development-environment">Option
+                                                    2: Local Development Environment</a></li>
+                                            <li><a class="css-19pur11"
+                                                    href="/tutorial/tutorial.html#help-im-stuck">Help, I'm Stuck!</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                            </div>
+                        </nav>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
